@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  <title>Restaurants</title>
+</head>
+
+<body style="background: rgb(245, 245, 245)">
+  <!-- Navigation bar-->
+  <div class="navbar">
+    <a href="welcome.html" class="navbar_item navbar_button" style="font-family: 'Lobster', cursive;">QuickFood</a>
+    <a href="cart.html" class="navbar_item navbar_button" style="float: right;">Cart</a>
+    <a href="restaurants.html" class="navbar_item navbar_button" style="float: right;">Restaurants</a>
+  </div>
+
+  <p style="margin-top: 100px;text-align: center; font-size: 24px; font-weight: bold;">Checkout</p>
+
+  <div class="checkout_container">
+    
+      <form class="checkout_form">
+
+        <label for="first_name_input">First Name</label>
+        <input type="text" name="first_name" id="first_name_input" placeholder="Your First Name..." required>
+
+        <label for="last_name_input">Last Name</label>
+        <input type="text" name="last_name" id="last_name_input" placeholder="Your Last Name..." required>
+
+        <label for="address_input">Delivery Address</label>
+        <div id="address_input" style="display: flex">
+            <input type="text" name="street" id="street_input" placeholder="Civic Number and Street Name..." required>
+            <select id="city_input" name="city" style="width: fit-content">
+                <option value="debit">Toronto</option>
+                <option value="credit">Ottawa</option>
+                <option value="cash">Montreal</option>
+                <option value="cash">Quebec City</option>
+              </select>
+            <input type="text" style="width: fit-content;" name="postal_code" id="postal_code_input" placeholder="A1B 2C3" required>
+        </div>
+
+        <label for="apt_number_input">Apt# (optional)</label>
+        <input type="text" name="apt_number" id="apt_number_input">
+        
+        <label for="payment_mode_input">Payment Mode</label>
+        <select id="payment_mode_input" name="payment_mode">
+          <option value="debit">Debit Card</option>
+          <option value="credit">Credit Card</option>
+          <option value="cash">Cash (On Delivery)</option>
+        </select>
+
+        <p style="text-align: center; margin-top: 50px; font-weight: bold">Total: $23.67</p>
+
+        <button class="checkout_button" type="submit">Order</button>
+
+      </form>
+  </div>
+
+  <footer style="height: 140px; background: #ccc; margin-top: 140px;">
+    <p style="text-align: center; font-size: 14px; vertical-align: middle">Oscar Anthony Gbegan</p>
+  </footer>
+
+</body>
+
+</html> 
